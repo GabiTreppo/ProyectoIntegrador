@@ -1,0 +1,94 @@
+.form-contacto{
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    width: auto;
+    background-color: #E4DFCF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+
+.input__contacto{
+    
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    height: 40px;
+    background-color: #E4DFCF;
+    border-radius: 5px;
+    display: flex; 
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+
+::placeholder{
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#textarea{
+    height: 100px;
+}
+
+.h2__form{
+    color: blueviolet;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+.btn-enviar{
+    --color: blueviolet;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: blueviolet;
+    //transition: background 0s;
+   }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu" />
+  
+        <nav class="nav-bar">
+          <ul class="nav-bar__nav-list">
+            <li class="nav-bar__nav-item">
+              <a href="index.html" class="nav-bar__nav-link"> INICIO </a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="#" class="nav-bar__nav-link"> ALTA </a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="contacto.html" class="nav-bar__nav-link"> CONTACTO </a>
+            </li>
+            <li class="nav-bar__nav-item">
+              <a href="nosotros.html" class="nav-bar__nav-link"> NOSOTROS </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- nav-bar -->
+  
+        <div class="search-bar"><img src="img/logos/logoTechStore.png" alt="logoTechStore">
+          <div class="search-bar__logo-container"></div>
+          <form action="" class="search-bar__form-container">
+            <label for="busqueda" class="search-bar__form-label"></label>
+            <input type="search" class="search-bar__form-search" id="busqueda" />
+            <input type="submit" class="search-bar__form-submit" value="Buscar" />
+          </form>
+          <div class="search-bar__carrito-container"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="6" cy="19" r="2" />
+            <circle cx="17" cy="19" r="2" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+            <path d="M15 6h6m-3 -3v6" />
+          </svg></div>
+          <div class="menu-toggle">
+            <label for="menu" class="menu-toggle__label">
+              <span class="menu-toggle__top-bread"></span>
+              <span class="menu-toggle__meat"></span>
+              <span class="menu-toggle__bottom-bread"></span>
+            </label>
+          </div>
+        </div>
+        <!-- search-bar -->
+      </header>
+      <!-- <header> -->
+
+
+      <main>
+        
+        <form class="form-contacto">
+            <h2 class="h2__form">Dejanos tus comentarios</h2>
+                <input class="input__contacto" placeholder="Nombre" type="text" class="input" required="">
+                <input class="input__contacto" placeholder="Apellido" type="text" class="input" required="">
+                <input class="input__contacto" placeholder="E-mail" type="email" class="input" required="">
+                <input class="input__contacto" placeholder="Celular" type="number" class="input" required="">
+                <textarea class="input__contacto" name="" id="textarea" cols="30" rows="10" placeholder="Comentarios..." required=""></textarea>
+            <button class="btn-enviar">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

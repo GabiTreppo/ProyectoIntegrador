@@ -1,0 +1,187 @@
+/***********************************
+             HEADER
+***********************************/
+   
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        & {
+          flex-direction: column-reverse;  
+        }
+    }
+
+}
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toggle__label {
+        background-color: blueviolet;
+    }
+}
+
+/***********************************
+             NAV BAR
+***********************************/
+
+.nav-bar {
+    
+
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__nav-item {
+        text-align: center;
+    }
+
+    &__nav-link {
+        display: block;
+        color: black;
+        padding: 1em 2em;
+        text-decoration: none;
+
+        &:hover{
+            border-radius: 15px;
+            color: white;
+            background-color: blueviolet;
+            transition: all .5s;
+            justify-content: center;
+            align-items: center;
+          }
+    }
+
+    @media (max-width: 768px) {
+        & {
+            display: none;
+        }
+    }
+    order: 2;
+   
+
+}
+
+/***********************************
+             SEARCH BAR
+***********************************/
+
+.search-bar {
+    background-color: #E4DFCF;
+    display: flex;
+    justify-content: right;
+    width: 100vw;
+    height: 5vw;   
+
+    &__logo-container,
+    &__form-container {
+        padding: 1em;
+    }
+
+    &__logo-container {
+        width: 8vw;
+        height: 20%;
+    }
+
+    &__form-container {
+        background-color: blueviolet;
+        display: flex;
+        flex-basis: 80%;
+    }
+
+    &__form-label {
+        height: 20%;
+    }
+
+    &__form-search {
+        background-color: white;
+        width: 60%;
+        height: 25px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form-submit {
+        background-color: blueviolet;
+        color: white;
+        height: 25px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__carrito-container {
+        flex: 0 0 5em;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/***********************************
+             MENU TOGGLE
+***********************************/
+.menu-toggle {
+    display: none;
+    background-color: white;
+    flex: 0 0 3em;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        display: block;
+        background-color: blueviolet;
+        height: 100%;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: .2em;
+        position: absolute;
+        left: .5em;
+        right: .5em;
+    }
+
+    &__top-bread {
+        top: .8em;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -.1em;
+    }
+
+    &__bottom-bread {
+        bottom: .8em;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            display: block
+        }
+    }
+
+}
+
+

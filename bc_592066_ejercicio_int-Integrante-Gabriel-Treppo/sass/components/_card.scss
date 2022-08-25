@@ -1,0 +1,67 @@
+.card {
+    outline: none;
+    flex-grow: 1;
+    width: 220px;
+    max-width: 300px;
+    height: 250px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px black, 0 0 3px black;
+    border-radius: 5%;
+    transition: all .2s;
+    background: none;
+    margin: 10px;
+
+    &:hover, 
+    &:focus {
+        transform: scale(1.1) rotate(-1deg);
+        transform-origin: center;
+        box-shadow:  3px 5px  black
+      
+    }
+    
+
+    &__image-container {
+        height: 200px;
+        overflow: hidden;
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+    }
+
+     &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .2s;        
+    }
+
+}
+
+
+.card__heading{
+    text-align: left;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    &:hover{
+        border-radius: 15px;
+        color: white;
+        background-color: blueviolet;
+        padding: 5px;
+        transition: all .5s;
+      }
+
+}
+
+.card__description{
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: start;
+
+    
+}
+
+.card__article{
+    background-color: #E4DFCF;
+    height: 100%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}

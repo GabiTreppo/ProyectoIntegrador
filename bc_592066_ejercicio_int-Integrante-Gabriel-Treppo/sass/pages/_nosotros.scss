@@ -1,0 +1,53 @@
+.info{
+    margin: 40px;
+    background-color: #E4DFCF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+
+    h2{
+        color: blueviolet;
+        margin: 5px;
+    }
+
+        @media (min-width:340px) and (max-width:480px){
+            &{
+                width: 80vw;
+            }
+        }
+    
+}
+
+
+.redes{
+    margin: 40px;
+    background-color: #E4DFCF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    p{
+        flex-direction: row;
+        justify-content: center;
+        margin: 40px;
+    }
+    &:hover, 
+    &:focus {
+        transform: scale(1.1) rotate(2deg);
+        transform-origin: center;
+        box-shadow:  3px 5px  black
+      
+    }
+}
+
+.p__nosotros{
+    text-align: justify;
+    margin: 20px
+}
